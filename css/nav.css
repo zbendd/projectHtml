@@ -30,6 +30,27 @@
     background-color: #ffeed4;
 }
 
+.advertisement-container {
+    width: 100%;
+    display: flex;
+    padding: 10px 10px;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+    background-color: red;
+    align-items: center;
+}
+
+.advertisement-container img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.advertisement-container marquee {
+    font-size: larger;
+    font-weight: bold;
+}
+
 .link {
     text-transform: capitalize;
     padding: 0 10px;
@@ -71,8 +92,12 @@
     outline: none;
 }
 
-.search-btn {
+.search-frm {
     width: 20%;
+    height: 40px;
+}
+
+.search-btn {
     height: 40px;
     padding: 10px 20px;
     border: none;

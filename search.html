@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>ZahiraShop</title>
-        <link href="css/home.css" rel="stylesheet" type="text/css" />
+        <title>Search Page</title>
+        <link rel="stylesheet" href="css/home.css" />
+        <link rel="stylesheet" href="css/search.css" />
     </head>
 
     <body>
         <nav class="navbar">
             <div class="nav">
-                <a href="https://zbendd.github.io/projectHtml/"><img src="img/dark-logo.png" class="brand-logo" alt="" /></a>
+                <img src="img/dark-logo.png" class="brand-logo" alt="" />
                 <div class="nav-items">
                     <div class="search">
                         <input type="text" class="search-box" placeholder="search brand, product" />
-                        <form class="search-frm" action="file:///C:/Users/blaissao/Desktop/perso/Zahira_Html/projectHtml/search.html">
-                            <button class="search-btn" type="submit">search</button>
-                        </form>
+                        <button class="search-btn">search</button>
                     </div>
                     <a href="#"><img src="img/user.png" alt="" /></a>
                     <a href="#"><img src="img/cart.png" alt="" /></a>
                 </div>
             </div>
         </nav>
-        <ul class="advertisement-container">
-            <img src="img/solde.gif" alt="" />
-            <marquee>Profitez du solde sur tous nos produits jusqu'a 50% !!!. Offre valable jusqu'à <span id="currentDate"> </span></marquee>
-            <img src="img/solde.gif" alt="" />
-        </ul>
         <ul class="links-container">
             <li class="link-item"><a href="#" class="link">home</a></li>
             <li class="link-item"><a href="#" class="link">baby</a></li>
@@ -33,17 +27,11 @@
             <li class="link-item"><a href="#" class="link">boy</a></li>
             <li class="link-item"><a href="#" class="link">accessories</a></li>
         </ul>
-        <!-- hero section -->
-        <header class="hero-section">
-            <div class="content">
-                <img src="img/light-logo.png" class="logo" alt="" />
-                <p class="sub-heading">best fashion choice for your baby</p>
-            </div>
-        </header>
-        <section class="product">
-            <h2 class="product-category">best selling</h2>
-            <button class="pre-btn"><img src="img/arrow.png" alt="" /></button>
-            <button class="nxt-btn"><img src="img/arrow.png" alt="" /></button>
+
+        <!-- ///////////////////////////////////////////// -->
+
+        <section class="search-results">
+            <h2 class="heading">search results for <span>product</span></h2>
             <div class="product-container">
                 <div class="product-card">
                     <div class="product-image">
@@ -143,27 +131,9 @@
                 </div>
             </div>
         </section>
-        <!-- collections -->
-        <section class="collection-container">
-            <a href="#" class="collection">
-                <img src="img/girl-collection.png" alt="" />
-                <p class="collection-title">
-                    girl <br />
-                    apparels
-                </p>
-            </a>
-            <a href="#" class="collection">
-                <img src="img/boy-collection.png" alt="" />
-                <p class="collection-title">
-                    boy <br />
-                    apparels
-                </p>
-            </a>
-            <a href="#" class="collection">
-                <img src="img/accessories-collection.png" alt="" />
-                <p class="collection-title">accessories</p>
-            </a>
-        </section>
+
+        <!-- ///////////////////////////////////////////// -->
+
         <footer>
             <div class="footer-content">
                 <img src="img/light-logo.png" class="logo" alt="" />
@@ -197,11 +167,5 @@
                 </div>
             </div>
         </footer>
-        <script src="js/home.js"></script>
-        <script>
-            const d = new Date();
-            d.setDate(d.getDate() + 10); // il reste 10 jour (periode de solde)
-            document.getElementById("currentDate").innerHTML = d.toLocaleDateString();
-        </script>
     </body>
 </html>
