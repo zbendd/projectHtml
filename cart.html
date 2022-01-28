@@ -5,6 +5,8 @@
         <link rel="stylesheet" href="css/home.css" />
         <link rel="stylesheet" href="css/imageSlider.css" />
         <link rel="stylesheet" href="css/product.css" />
+        <link rel="stylesheet" type="text/css" href="css/cart.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet" />
     </head>
 
     <body>
@@ -33,71 +35,60 @@
 
         <!-- ///////////////////////////////////////////// -->
 
-        <section class="product-details">
-            <section class="image-slider">
-                <div class="CSSgal">
-                    <!-- Don't wrap targets in parent -->
-                    <s id="s1"></s>
-                    <s id="s2"></s>
-                    <s id="s3"></s>
-                    <s id="s4"></s>
-
-                    <div class="slider">
-                        <div style="background-image: url('img/product image 1.png')"></div>
-                        <div style="background-image: url('img/product image 2.png')"></div>
-                        <div style="background-image: url('img/product image 3.png')"></div>
-                        <div style="background-image: url('img/product image 4.png')"></div>
-                    </div>
-
-                    <div class="prevNext">
-                        <div><a href="#s4">4</a><a href="#s2">2</a></div>
-                        <div><a href="#s1">1</a><a href="#s3">3</a></div>
-                        <div><a href="#s2">2</a><a href="#s4">4</a></div>
-                        <div><a href="#s3">3</a><a href="#s1">1</a></div>
-                    </div>
-
-                    <div class="bullets">
-                        <a href="#s1">1</a>
-                        <a href="#s2">2</a>
-                        <a href="#s3">3</a>
-                        <a href="#s4">4</a>
-                    </div>
-                </div>
-            </section>
-            <div class="details">
-                <h2 class="product-brand">2 PIÈCES JACQUARD</h2>
-                <p class="product-short-des">ENSEMBLE 2 PIÈCES JACQUARD BÉBÉ EN TRICOT.</p>
-                <span class="product-price">$99</span>
-                <span class="product-actual-price">$200</span>
-                <span class="product-discount">( 50% off )</span>
-
-                <p class="product-sub-heading">select size</p>
-
-                <input type="radio" name="size" value="s" checked hidden id="s-size" />
-                <label for="s-size" class="size-radio-btn check">s</label>
-                <input type="radio" name="size" value="m" hidden id="m-size" />
-                <label for="m-size" class="size-radio-btn check">m</label>
-                <input type="radio" name="size" value="l" hidden id="l-size" />
-                <label for="l-size" class="size-radio-btn">l</label>
-                <input type="radio" name="size" value="xl" hidden id="xl-size" />
-                <label for="xl-size" class="size-radio-btn">xl</label>
-                <input type="radio" name="size" value="xxl" hidden id="xxl-size" />
-                <label for="xxl-size" class="size-radio-btn">xxl</label>
-
-                <form action="/Users/blaissao/Desktop/perso/Zahira_Html/projectHtml/cart.html">
-                    <button class="btn cart-btn">add to cart</button>
-                </form>
+        <section class="CartContainer">
+            <div class="Header">
+                <h3 class="Heading">Shopping Cart</h3>
+                <h5 class="Action">Remove all</h5>
             </div>
-        </section>
-        <section class="detail-des">
-            <h2 class="heading">description</h2>
-            <p class="des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,Lorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing elit.
-                VeniamLorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing
-                elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur
-                adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet
-                consectetur adipisicing elit. Veniam ......
-            </p>
+
+            <div class="Cart-Items">
+                <div class="image-box">
+                    <img src="img/card7.png" style="height: 120px" />
+                </div>
+                <div class="about">
+                    <h1 class="title">Body</h1>
+                    <img src="img/veg.png" style="height: 30px" }} />
+                </div>
+                <div class="counter">
+                    <div class="btn">+</div>
+                    <div class="count">2</div>
+                    <div class="btn">-</div>
+                </div>
+                <div class="prices">
+                    <div class="amount">$2.99</div>
+                    <div class="remove"><u>Remove</u></div>
+                </div>
+            </div>
+
+            <div class="Cart-Items pad">
+                <div class="image-box">
+                    <img src="img/card4.png" style="height: 120px" }} />
+                </div>
+                <div class="about">
+                    <h1 class="title">Veste</h1>
+                    <img src="img/veg.png" style="height: 30px" }} />
+                </div>
+                <div class="counter">
+                    <div class="btn">+</div>
+                    <div class="count">1</div>
+                    <div class="btn">-</div>
+                </div>
+                <div class="prices">
+                    <div class="amount">$3.19</div>
+                    <div class="remove"><u>Remove</u></div>
+                </div>
+            </div>
+            <hr />
+            <div class="checkout">
+                <div class="total">
+                    <div>
+                        <div class="Subtotal">Sub-Total</div>
+                        <div class="items">2 items</div>
+                    </div>
+                    <div class="total-amount">$6.18</div>
+                </div>
+                <button class="button">Checkout</button>
+            </div>
         </section>
 
         <!-- ///////////////////////////////////////////// -->
