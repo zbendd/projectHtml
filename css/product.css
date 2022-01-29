@@ -108,3 +108,16 @@
     color: #383838;
     line-height: 25px;
 }
+
+.aboutas-desc-title {
+    text-align: center;
+    margin: 40px auto 50px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.aboutas-desc {
+    color: #383838;
+    font-size: 1.5rem;
+    margin: 40px auto 50px;
+    font-weight: 700;
+}
