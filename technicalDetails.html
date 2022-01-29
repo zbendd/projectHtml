@@ -35,70 +35,26 @@
 
         <!-- ///////////////////////////////////////////// -->
 
-        <section class="product-details">
-            <section class="image-slider">
-                <div class="CSSgal">
-                    <!-- Don't wrap targets in parent -->
-                    <s id="s1"></s>
-                    <s id="s2"></s>
-                    <s id="s3"></s>
-                    <s id="s4"></s>
-
-                    <div class="slider">
-                        <div style="background-image: url('img/product image 1.png')"></div>
-                        <div style="background-image: url('img/product image 2.png')"></div>
-                        <div style="background-image: url('img/product image 3.png')"></div>
-                        <div style="background-image: url('img/product image 4.png')"></div>
-                    </div>
-
-                    <div class="prevNext">
-                        <div><a href="#s4">4</a><a href="#s2">2</a></div>
-                        <div><a href="#s1">1</a><a href="#s3">3</a></div>
-                        <div><a href="#s2">2</a><a href="#s4">4</a></div>
-                        <div><a href="#s3">3</a><a href="#s1">1</a></div>
-                    </div>
-
-                    <div class="bullets">
-                        <a href="#s1">1</a>
-                        <a href="#s2">2</a>
-                        <a href="#s3">3</a>
-                        <a href="#s4">4</a>
-                    </div>
-                </div>
-            </section>
-            <div class="details">
-                <h2 class="product-brand">2 PIÈCES JACQUARD</h2>
-                <p class="product-short-des">ENSEMBLE 2 PIÈCES JACQUARD BÉBÉ EN TRICOT.</p>
-                <span class="product-price">$99</span>
-                <span class="product-actual-price">$200</span>
-                <span class="product-discount">( 50% off )</span>
-
-                <p class="product-sub-heading">select size</p>
-
-                <input type="radio" name="size" value="s" checked hidden id="s-size" />
-                <label for="s-size" class="size-radio-btn check">s</label>
-                <input type="radio" name="size" value="m" hidden id="m-size" />
-                <label for="m-size" class="size-radio-btn check">m</label>
-                <input type="radio" name="size" value="l" hidden id="l-size" />
-                <label for="l-size" class="size-radio-btn">l</label>
-                <input type="radio" name="size" value="xl" hidden id="xl-size" />
-                <label for="xl-size" class="size-radio-btn">xl</label>
-                <input type="radio" name="size" value="xxl" hidden id="xxl-size" />
-                <label for="xxl-size" class="size-radio-btn">xxl</label>
-
-                <form action="https://zbendd.github.io/projectHtml/cart.html">
-                    <button class="btn cart-btn">add to cart</button>
-                </form>
-            </div>
-        </section>
         <section class="detail-des">
-            <h2 class="heading">description</h2>
-            <p class="des">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,Lorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing elit.
-                VeniamLorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing
-                elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur
-                adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet consectetur adipisicing elit. VeniamLorem ipsum dolor sit amet
-                consectetur adipisicing elit. Veniam ......
+            <h2 class="aboutas-desc-title">Technical Details</h2>
+            <p class="aboutas-desc">Auteur : Zahira BENDDIB</p>
+            <p class="aboutas-desc">
+                Voici les étapes que j'ai suivi pour construire ce siteweb : </br></br>
+                <span>- Dans un premier temps j'ai crée la page home pour laquelle j'ai crée deux fichiers style css (nav.css / home.css).
+                    le fichier nav.css sera partagé par les autres pages. </span
+                ></br></br>
+                <span>
+                    - Deuxiènement j'ai crée la page produit pour laquelle j'ai crée un fichier style css (product.css). J'ai cherché un slider purement html/css et j'ai implémenté cette exemple :
+                    <a href="https://stackoverflow.com/questions/34689047/pure-css3-image-slider-without-javascript-or-radio-inputs">Html/css Slider </a>
+                </span>
+                </br></br>
+                <span>
+                    - Après, chaque page créée aura son propre css. 
+                </span>
+                </br></br>
+                <span>
+                    - J'ai eu après une erreur dans validation de W3C en utilisant le composant marquee. J'ai cherché un équivalent en html. Voilà l'exemple : <a href="https://stackoverflow.com/questions/15128716/html-5-marquee-tag-error-in-w3c-validation"> equivalent marquee en css</a>. 
+                </span>
             </p>
         </section>
 
